@@ -1,0 +1,106 @@
+html {
+	position: relative;
+}
+body{
+	margin-bottom: 100px;
+	margin-top: 40px;
+}
+.jumbotron {
+	background-image: url('../img/work.jpg');
+	background-attachment: fixed;
+	height: 400px;
+	overflow: hidden;
+}
+.jumbotron img{
+	width: 200px;
+	border: 4px solid white;
+}
+.jumbotron h1, .jumbotron p{
+	color: white;
+	/*text-shadow: 1px 1px 10px rgba(0,0,0,0.5);*/
+	/*box-shadow: 1px 1px 10px rgba(0,0,0,0.5);*/
+}
+hr{
+	width: 250px;
+	border-top: 4px solid black;
+}
+section{
+	min-height: 600px;
+}
+.about h1{
+	font-size: 32px;
+}
+.pKiri, .pKanan{
+	opacity: 0;
+		/*parameter sumbu x,y*/
+	transform: translate(-50px,0);
+	transition: 1s;
+}
+.pKanan{
+	transition: translate(50px, 0);
+	font-size: 25px;
+}
+.pKiri.pMuncul, .pKanan.pMuncul{
+	opacity: 1;
+	transform: translate(0,0);
+}
+.portfolio{
+	background-color: #eee;
+}
+.portfolio .thumbnail{
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: 0.3s;
+}
+.portfolio .thumbnail.muncul{
+	opacity: 1;
+	transform: translate(0, 0);
+}
+.contact{
+	min-height: 800px;
+}
+.containerskill{
+	width: 100%;
+	background-color: #ddd;
+}
+.skills {
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+}
+.hire{
+	background-color: #eee;
+}
+/*.html {
+	width: 85%; background-color: #4CAF50
+}
+.css {
+	width: 80%; background-color: #4CAF50
+}
+.php {
+	width: 75%; background-color: #4CAF50
+}
+.javascript{
+	width: 70%; background-color: #4CAF50
+}
+.bootstrap{
+	width: 80%; background-color: #4CAF50
+}*/
+footer{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	bottom: 0;
+	background-color: #333;
+	padding-top: 30px;
+}
+footer p{
+	color: white;
+	font-size: 12px;
+	text-align: center;
+}
+
+footer p i{
+	color: salmon;
+}
